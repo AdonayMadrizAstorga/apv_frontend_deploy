@@ -1,16 +1,72 @@
-# React + Vite
+# 🐶 Administrador de Pacientes Veterinarios (APV) – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada en **React** para la gestión de pacientes veterinarios.  
+Forma parte de un proyecto **full-stack MERN**, orientado a uso real y demostración profesional.
 
-Currently, two official plugins are available:
+Permite a los veterinarios autenticarse, administrar sus pacientes (mascotas) y gestionar su perfil.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Demo en vivo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 **Aplicación:** https://apv-mern-adonay.netlify.app  
+🔗 **API Backend:** https://agenciaviajesnode-u8it.onrender.com
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧪 Credenciales de prueba (Demo)
+
+> Pensadas para que reclutadores puedan explorar la aplicación sin necesidad de registro.
+
+- **Email:** demo@demo.com  
+- **Password:** Demo123
+
+⚠️ *El flujo de registro con confirmación por email está implementado a nivel de código,  
+pero en el entorno de producción los correos no se envían a direcciones reales.  
+(Se utilizó Mailtrap durante el desarrollo).  
+Para una revisión completa de la aplicación, se recomienda usar las credenciales demo indicadas en la página de Login.*
+
+---
+
+## 🧠 Funcionalidades principales
+
+### 👤 Autenticación
+- Inicio de sesión
+- Protección de rutas
+- Persistencia de sesión
+- Recuperación y cambio de contraseña
+- Edición del perfil del veterinario
+
+### 🐾 Gestión de pacientes
+- Crear pacientes (mascotas)
+- Editar pacientes
+- Eliminar pacientes
+- Asociación paciente ↔ veterinario autenticado
+
+---
+
+## 🛠️ Tecnologías utilizadas (Frontend)
+
+- React
+- Vite
+- React Router DOM
+- Axios
+- Context API
+- CSS moderno
+- Consumo de API REST
+
+---
+
+## 🔐 Seguridad
+- Autenticación basada en JWT
+- Rutas protegidas
+- Manejo de sesiones
+- Variables de entorno para configuración sensible
+
+---
+
+## 📦 Instalación local (opcional)
+
+```bash
+npm install
+npm run dev
