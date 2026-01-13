@@ -6,6 +6,11 @@ import clienteAxios from '../config/axios';
 
 const Login = () => {
 
+  const demo = {
+    email: 'demo@demo.com',
+    password: 'Demo123'
+  };
+
   const [ email, setEmail ] = useState('');
   const [ password, setPassword ] = useState('');
   const [ alerta, setAlerta ] = useState( {} );
@@ -54,6 +59,40 @@ const Login = () => {
             Inicia Sesión y Administra {""}
             <span className="text-black">tus Pacientes</span>
           </h1>
+
+          <div className='grid grid-cols-2'>
+            <div></div>
+              
+            {/* Información para loguearse en Demo */}
+            <div className='mt-10 p-4 border border-dashed border-gray-500 rounded-md bg-gray-50 text-sm text-center'>
+              <p className='font-bold text-xl mb-4'>Credenciales <span className='text-indigo-600'>Demo</span></p>
+
+              <div className='grid grid-cols-2'>
+                <div>
+                  <p className='font-bold'>Email:</p>
+                  <p className='font-bold'>Password:</p>
+                </div>
+
+                <div>
+                  <p>{ demo.email }</p>
+                  <p>{ demo.password }</p>
+                </div>
+
+              </div>
+                
+                <button
+                  type='button'
+                  className="bg-green-700 w-full py-3 px-10 rounded-xl text-white uppercase font-bold mt-5 hover:cursor-pointer hover:bg-green-800 md:w-auto"
+                  onClick={ () => {
+                    setEmail( demo.email );
+                    setPassword( demo.password );
+                  }}
+                >
+                  Autocompletar
+                </button>
+
+            </div>
+          </div>
         </div>
 
         <div className='mt:20 md:mt-5 shadow-lg px-5 py-10 rounded-xl bg-white'>
